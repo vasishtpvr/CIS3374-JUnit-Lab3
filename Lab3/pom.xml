@@ -4,4 +4,24 @@
   <artifactId>Lab3</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Lab3</name>
+  <packaging>jar</packaging>
+  
+  	<build>
+  		<plugins>
+  		
+  		<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+            <archive>
+                <manifest>
+                    <mainClass>com.lab3.runnable.MainClass</mainClass>
+                </manifest>
+            </archive>
+        </configuration>
+    </plugin>
+  		
+  		</plugins>
+  	</build>
+  
 </project>

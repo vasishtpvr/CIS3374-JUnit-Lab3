@@ -1,10 +1,10 @@
-package com.lab3.main;
+package com.lab3.runnable;
 
 import java.util.Scanner;
 
 import com.lab3.admiterator.Admiterator;
 
-public class Main {
+public class MainClass {
 
 	private static Scanner scanner;
 
