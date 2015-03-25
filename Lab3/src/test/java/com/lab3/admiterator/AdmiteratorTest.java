@@ -1,5 +1,6 @@
 package com.lab3.admiterator;
-import junitparams.JUnitParamsRunne;
+import junitparams.JUnitParamsRunner;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -7,7 +8,7 @@ import org.junit.runners.Parameterized;
 @RunWith(JUnitParamsRunner.class)
 public class AdmiteratorTest {
 	@Test
-	@parameters(method=admit)
+	@parameters(method=admitTest())
 	
 	public void admitTest(int speed, int accuracy){
 		
@@ -15,7 +16,11 @@ public class AdmiteratorTest {
 		
 		
 	}
-	private Object admit(){}
+	private Object admit(){
+		return new Object[][]{{},{}};
+		
+		
+	}
 	
 		
 }
